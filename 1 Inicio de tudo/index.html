@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset = "utf-8">
+   <title> Minha Primeira página </title>
+
+<!--colocar a cor total do fundo de amarela e a fonte total do texto de verde ( sempre no head) : 
+   <Style> 
+	   	body { background-color: yellow;
+	   	color: Green; 
+	   }
+   </Style>-->
+
+</head>
+
+<body>
+
+<!--1-->
+<!-- alo portugal-->
+
+	<headers><header>
+    <div>Olá Portugal! </div>
+    <footer></footer> 
+
+<hr>
+
+<!--novo codigo utilizando paragrafos P, br e a linha para divisão HR-->
+ <h1> 2 - Tag para paragráfo (P): </h1>
+
+<!-- código usando p-->
+
+   <p> olá mundo</p>
+   <p> olá portugal</p>
+
+<hr>
+
+ <h1> 3 - Tag para paragrafo sem indicar nenhuma tag, mas no código o texto está em paragrafo: </h1>
+
+<!--código usando nada, fica na mesama linha no site-->
+
+   olá mundo, 
+   ola portugal
+
+<hr>
+
+ <h1> 4 - Tag para paragrafo com espaçamento simples (br): </h1>
+
+<!-- código usando br  Faz o paragrafo com espaçamento simples -->
+    olá mundo <br> olá portugal
+
+<hr>
+
+ <h1> 5 - Tag para títulos (h1) quanto menor o número maior o título : </h1>
+
+<!--outra tag para titulos quanto menor o número do h, maior a fonte -->
+
+    <h1> Folly e Meireles - Tamanho do título 1 </h1>
+    <h2> Folly e Meireles - Tamanho do título 2 </h2>
+    <h3> Folly e Meireles - Tamanho do título 3 </h3>
+    <h4> Folly e Meireles - Tamanho do título 4 </h4>
+    <h5> Folly e Meireles - Tamanho do título 5 </h5>
+    <h6> Folly e Meireles - Tamanho do título 6 </h6>
+
+<!--texto comum -->
+
+     <p> Folly e Meireles - Tamanho da fonte normal para textos </p>
+
+<hr>
+
+ <h1> 6 - Tag para formatação de textos </h1>
+
+<!--tag para formatação de texto -->
+ 
+    <b> Texto em negrito </b> <br>
+    <strong> Texto em negrito </strong> <br>
+    <i> Texto para italico </i> <br>
+    <em> Texto para italico </em> <br>
+    <u> Texto sublinhado </u><br>
+    <sub> Texto subliscrito </sub><br>
+    <sup> Texto sobrescrito </sup><br>
+    <big> Texto com fonte maior que padrão </big><br>
+    <small> Texto com fonte menor que padrão </small><br>
+
+<hr>
+
+ <h1> 7 - Utilizando o atributo style e a propriedade font-family para trocar a fonte da letra: </h1>
+
+<!-- Declarando uma unica fonte -->
+
+    <p style = "font-family:'Arial'">Olá Hugo!</p>
+
+    <p style="font-family:'Arial;Times New Roman'">Olá Hugo novamente! </p>
+
+<hr>
+
+ <h1> 8 - Tag para mudar cores de paragrafos separados </h1>
+
+     <p style="color:red">Quero aprender a programar </p>
+
+<hr>
+
+ <h1> 9 - Agora se quer aplicar uma outra cor no mesmo paragrafo podemos usar a tag span:</h1>
+
+      <p style="color:red"> Esse paragrafo terá cor vermelha. <span style="color:blue"> Já esse azul.</span></p>
+
+<hr>
+ 
+ <h1><p style="color:pink"> 10 - Colocar uma imagem:</h1></p>
+
+      <img src = "Koala.jpg">
+
+<hr>
+
+ <h1> 11 - Brincando com as cores:</h1>
+
+      <u><p style ="color:red">Quero vermelho e sublinhado esse texto </p></u>
+
+      <i><p style ="color:red">Quero letra vermelha, texto italico </p></i>
+
+      <!-- <i><p style ="color:red"body{background-color:blue>Quero letra vermelha, texto italico e marcado de azul </p></i> -->
+
+	  <i><p style ="color:red; background-color:blue; float: right">Quero letra vermelha, texto italico e marcado de azul </p></i>
+
+      <big><p style = "color:green">Quero letra maior que o normal e cor verde </p></big>
+
+      <h1><p style = "color:red">1 <span style="color:blue">Roberta irá ser programadora </span> </p> </h1>
+
+<hr>
+
+     <h1><p style = "color:green">12 - Links para outra página: </p></h>
+
+     <a href="https://www.google.com.br/">Google</a>
+
+<hr>
+
+<h1><a style="color:red"> 13 - Trabalhando com tabelas:
+
+	<p>
+
+	<table border ="2">
+
+		<th><th>Nome</th> <th><th> Data de Nascimento </th></th>
+		<tr><td><td>Roberta Meireles da Silva</td><td><td>26/03/1987</td></tr>
+
+	</table>
+
+<hr>
+
+    <h3><i><a style="color:yellow; background-color:green"> 14 - Formulários:</a></i></h3>
+
+<!--1 indica a pag que será salva as informações:-->
+
+    <form action="processa.php" method = "postr">
+
+    <a style="color: blue"> 14.1 - Tag input:</a>
+
+<br>
+    <label>First Name:</label>
+    <input type="text"name="texto 1"placeholder="Type your full name">
+<br>
+    <label>Last Name:</label>
+    <input type="text"name= "texto 2">
+
+    <p></p><a style="color:blue"> 14.2 - Tag input senha:</a>
+
+<br>
+
+    <label>Password</label>
+    <input type="password" name = "senha">
+
+     <p></p><a style="color:blue">14.2 - Tag input informação oculta: </a>
+
+<br>
+    <label>Mensagem oculta</label>
+    <input type="hidden" name = "Informação oculta" value="mensagem oculta">
+
+    <p></p><a style="color:blue"> 14.3 - Select</a>
+
+     <br>
+
+     <label>Select</label>
+     <select name= "seleção">
+	 <option value = "1">opção 1 </option>
+     <option value = "2"> opção 2 </option>
+
+     </select>
+
+     <br>
+
+     <p></p><a style="color: blue"> 14.4 - Tag tipo style:</a>
+
+     <br>
+
+     <label>Radio</label>
+     <input type="radio" name = "radio1" value = "1">valor 1
+     <input type ="radio" name ="radio1" value = "2">valor 2
+
+
+     <p></p><a style ="color:blue"> 14.5 - Tag tipo checkbox:</a>
+
+     <br>
+
+     <label>Checkbox</label>
+     <input type="checkbox" name = "ck1" value ="1" >valor 1
+     <input type="checkbox" name = "ck1" value ="2" >valor 2
+     <input type="checkbox" name = "ck1" value ="3" >valor 3
+     <input type="checkbox" name = "ck1" value ="4" >valor 4
+
+<br>
+
+<input type="submit" valor = "Enviar" name="submit">
+
+</form>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulário</title>
+    <style type="text/css">
+    
+        td,th{
+            padding: 10px;
+            border: 1px solid black;
+        }
+    
+        table{
+            border-collapse: collapse;
+        }
+        </style>
+</head>
+<body>
+    <h1>Exercício Formulário</h1>
+
+    <form id="formulario" onsubmit="" method="post">
+        <fieldset>
+            <legend>Informações do cliente </legend><br>
+            <label for="nome">Nome Completo</label>
+                <input type="text" name="nome" id="nome" value="" maxlength="60"/></br></br>
+
+            <label for="email1">E-mail</label>
+                <input type="email" name="email1" id="email1" value=""/> </br></br>
+
+            <label for="email2">Repetição do E-mail</label>
+                <input type="email" name="email2" id="email2" value=""/> </br></br>
+            </fieldset><br><br>
+
+            <fieldset>
+            <legend>Informações da reserva </legend><br>
+                <label for="date">Data da chegada </label>
+                    <input type="date" name="date" id="date" value=""/> </br></br>
+
+                <label for="noites">Número de noites </label>
+                    <input type="number" name="noites" id="noites" value="" min="1" max="100"/> </br></br>
+
+                <label for="n_pessoas">Número de Pessoas </label>
+                    <input type="number" name="n_pessoas" id="n_pessoas" value="" min="1" max="3"/> </br></br>
+                
+                <p>Tipo de Quarto </p>
+                    <input type="radio" name="quarto" id="solteiro" value="solteiro"/><label for="solteiro">Solteiro </label> </br>
+                    <input type="radio" name="quarto" id="duplo" value="duplo"/> <label for="duplo">Duplo </label></br>
+                    <input type="radio" name="quarto" id="casal" value="casal"/> <label for="casal">Casal </label></br>
+                    <input type="radio" name="quarto" id="king" value="king"/> <label for="king">King Size </label></br>
+                    <input type="radio" name="quarto" id="deluxe" value="deluxe"/> <label for="deluxe">Duluxe </label></br><br>
+
+                <p>Selecione um dos nossos hoteis:
+                <select name="sitio">
+                        <option value="">Selecione</option>
+                    <optgroup label="Portugal">
+                        <option value="lisboa">Lisboa</option>
+                        <option value="porto">Porto</option>
+                    </optgroup>
+                    <optgroup label="Espanha">
+                        <option value="madri">Madri</option>
+                        <option value="sevilla">Sevilla</option>
+                    </optgroup>
+                </select> </p>
+
+                <p><label for="obs">Observações: </label></p>
+                    <textarea row="4" cols="50" id="obs" name="obs" value=""></textarea><br><br>
+            </fieldset> <br><br>
+
+            <input type="submit" name="submit" id="submit" value="submeter" >
+    </form>
+            
+            <h1>Quartos disponíveis</h1>
+
+            <table>
+        <thead> <!--cabeçalho da tabela-->
+            <tr>
+                <th colspan="4">Informações</th>
+                <th>Disponibilidade</th>
+            </tr>
+
+            <tr><!--inserir uma nova linha (row)-->
+                <th>ID</th><!--tabular header-->
+                <th>Tipo de Quarto</th>
+                <th>Características</th>
+                <th>Capacidade</th>
+                <th>Ver datas Ocupadas</th>
+            </tr>
+    </thead>
+        <tbody> <!--conteudos da tabela-->
+            <tr>
+                <td>1</td>
+                <td>Casal</td>
+                <td>2 camas, 15m2</td>
+                <td>2 adultos</td>
+                <td>1,2,5,7,15,19,31</td>
+            </tr>
+
+            <tr>
+                <td>2</td>
+                <td>King Size</td>
+                <td>Cama Queen size, 20m2</td>
+                <td>2 adultos</td>
+                <td>6,8,13,21,22,27</td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Solteiro</td>
+                <td>1 cama simples</td>
+                <td>1 pessoa</td>
+                <td>3,5,7,10,28,30</td>
+            </tr>
+
+            <tr>
+                <td>4</td>
+                <td>Deluxe</td>
+                <td>Cama king size, 20m2, vis</td>
+                <td>2 adultos + criança</td>
+                <td>4,5,6,7,8,20,23</td>
+            </tr>
+
+            <tr>
+                <td>5</td>
+                <td>Duplo</td>
+                <td>2 camas, 15m2</td>
+                <td>2 adultos</td>
+                <td>4,5,6,7,8,20,23</td>
+            </tr>
+
+            <tr>
+                <td>6</td>
+                <td>Duplo Superior</td>
+                <td>2 camas (+ cama extra)</td>
+                <td>3 adultos</td>
+                <td>1,2,4,5,8,9,10,13,14,15</td>
+            </tr>
+        </tbody>
+    </table>
+
+            
+    </form>
+
+    
+</body>
+</html>
